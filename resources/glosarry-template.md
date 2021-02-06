@@ -48,7 +48,7 @@ Los ViewSet son clases similares a las clases View, con la diferencia de que en 
 
 ## Otros conceptos
 
-- CRUD: RUD hace referencia a un acrónimo en el que se reúnen las primeras letras de las cuatro operaciones fundamentales de aplicaciones persistentes en sistemas de bases de datos:
+- CRUD: Hace referencia a un acrónimo en el que se reúnen las primeras letras de las cuatro operaciones fundamentales de aplicaciones persistentes en sistemas de bases de datos:
   - Create (Crear registros)
   - Read bzw. Retrieve (Leer registros)
   - Update (Actualizar registros)
