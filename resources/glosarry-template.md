@@ -48,8 +48,13 @@ Los ViewSet son clases similares a las clases View, con la diferencia de que en 
 
 ## Otros conceptos
 
-- CRUD:
+- CRUD: RUD hace referencia a un acrónimo en el que se reúnen las primeras letras de las cuatro operaciones fundamentales de aplicaciones persistentes en sistemas de bases de datos:
+  - Create (Crear registros)
+  - Read bzw. Retrieve (Leer registros)
+  - Update (Actualizar registros)
+  - Delete bzw. Destroy (Borrar registros)
+En pocas palabras, CRUD resume las funciones requeridas por un usuario para crear y gestionar datos.
 - JWT
-  - Definition:
-  - HS254:
-- OpenAPI:
+  - Definition: Es un estándar abierto basado en JSON propuesto por IETF (RFC 7519) para la creación de tokens de acceso que permiten la propagación de identidad y privilegios o claims en inglés.
+  - HS254: Es un algoritmo de encriptación que da lugar a un fichero cifrado.
+- OpenAPI:Es un estándar para definir contratos de Api. Los cuales describen la interfaz de una serie de servicios que vamos a poder consumir por medio de una signatura. Por ejemplo, saber que vamos a tener una operación de sumar que va a recibir dos números y que estos son del tipo “entero”.
