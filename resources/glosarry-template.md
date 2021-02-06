@@ -9,9 +9,10 @@
 
 ## Django REST Framework
 
-- Serializers:
-- Viewsets:
-- Mixins:
+- Serializers: Los serializers son clases que nos permiten transformar datos de formatos más propios de Django como objetos que extienden de Model o querysets, en formatos más propios del entorno web como puedan ser JSON y XML, y nos permiten hacerlo en ambas direcciones.
+- Viewsets: Django REST Framework incorpora una abstracción para trabajar con ViewSets, que nos permite concentrarnos en modelar el estado y las interacciones de la API, y dejar que la construcción de URLS se gestione automáticamente, en base a unas convenciones comunes.
+Los ViewSet son clases similares a las clases View, con la diferencia de que en lugar de proporcionar métodos de gestión como get y put, proporciona operaciones de read y update.
+- Mixins: Un mixin no es nada más que una clase que no está concebida para tener entidad por sí misma, sino por extender la funcionalidad a otras clases usando la herencia múltiple de Python. Un mixin, por lo tanto, añade funcionalidad a las clases.
 
 ## RESTful
 
