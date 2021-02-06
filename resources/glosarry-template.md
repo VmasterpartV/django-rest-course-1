@@ -16,7 +16,7 @@ Los ViewSet son clases similares a las clases View, con la diferencia de que en 
 
 ## RESTful
 
-- JSON:
+- JSON: JSON es un formato de texto sencillo para el intercambio de datos. Es usado a la hora de hacer peticiones por medio de las apis para devolver una respuesta, en este caso los datos solicitados.
 - Headers:
   - Content-Type:
   - Authorization:
@@ -27,12 +27,15 @@ Los ViewSet son clases similares a las clases View, con la diferencia de que en 
 - Parsers
 - Renders
 - Status codes
-  - 200:
-  - 201:
-  - 400:
-  - 401:
-  - 404:
-  - 500:
+  - 200: OK. La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP:
+  - 201: CREATED. La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado de ello. Ésta es típicamente la respuesta enviada después de una petición PUT.
+  - 203: NON AUTHORITATIVE INFORMATION. La petición se ha completado con éxito, pero su contenido no se ha obtenido de la fuente originalmente solicitada, sino que se recoge de una copia local o de un tercero. Excepto esta condición, se debe preferir una respuesta de 200 OK en lugar de esta respuesta.
+  - 204: NO CONTENT. La petición se ha completado con éxito pero su respuesta no tiene ningún contenido, aunque los encabezados pueden ser útiles. El agente de usuario puede actualizar sus encabezados en caché para este recurso con los nuevos valores.
+  - 400: BAD REQUEST. Esta respuesta significa que el servidor no pudo interpretar la solicitud dada una sintaxis inválida.
+  - 401: UNAUTHORIZED. Es necesario autenticar para obtener la respuesta solicitada. Esta es similar a 403, pero en este caso, la autenticación es posible.
+  - 403: FORBIDDEN. El cliente no posee los permisos necesarios para cierto contenido, por lo que el servidor está rechazando otorgar una respuesta apropiada.
+  - 404: NOT FOUND. El servidor no pudo encontrar el contenido solicitado. Este código de respuesta es uno de los más famosos dada su alta ocurrencia en la web.
+  - 500: INTERNAL SERVER ERROR. El servidor ha encontrado una situación que no sabe cómo manejarla.
     ...
 - HTTP Methods:
   - GET
