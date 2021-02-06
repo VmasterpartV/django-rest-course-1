@@ -57,4 +57,4 @@ En pocas palabras, CRUD resume las funciones requeridas por un usuario para crea
 - JWT
   - Definition: Es un estándar abierto basado en JSON propuesto por IETF (RFC 7519) para la creación de tokens de acceso que permiten la propagación de identidad y privilegios o claims en inglés.
   - HS254: Es un algoritmo de encriptación que da lugar a un fichero cifrado.
-- OpenAPI:Es un estándar para definir contratos de Api. Los cuales describen la interfaz de una serie de servicios que vamos a poder consumir por medio de una signatura. Por ejemplo, saber que vamos a tener una operación de sumar que va a recibir dos números y que estos son del tipo “entero”.
+- OpenAPI: Es un estándar para definir contratos de Api. Los cuales describen la interfaz de una serie de servicios que vamos a poder consumir por medio de una signatura. Por ejemplo, saber que vamos a tener una operación de sumar que va a recibir dos números y que estos son del tipo “entero”.
