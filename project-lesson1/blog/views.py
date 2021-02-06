@@ -1,7 +1,7 @@
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from .models import Post, User
-from .serializers import PostSerializer, UserSerializer
+from .models import Post, User, Comment
+from .serializers import PostSerializer, UserSerializer, CommentSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -40,4 +40,6 @@ class PostViewSet(viewsets.ModelViewSet):
         instance.delete()
         return Response(status=status.HTTP_200_OK)
 
-
+class CommentViewSet(viewsets.ModelViewSet):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
