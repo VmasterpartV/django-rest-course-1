@@ -13,3 +13,9 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         exclude = []
+
+class DivisionSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Division
+        exclude = []

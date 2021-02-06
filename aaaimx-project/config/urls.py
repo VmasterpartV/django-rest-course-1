@@ -19,10 +19,11 @@ from django.urls import path, include
 from rest_framework import routers
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from aaaimx.views import GroupView
+from aaaimx.views import GroupView, UserViewSet, DivisionViewSet
 
 router = routers.DefaultRouter()
-#router.register()
+router.register(r'users', UserViewSet)
+router.register(r'divisions', DivisionViewSet)
 
 auth_urlpatterns = [
     path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
