@@ -53,6 +53,8 @@ Los ViewSet son clases similares a las clases View, con la diferencia de que en 
   - Read bzw. Retrieve (Leer registros)
   - Update (Actualizar registros)
   - Delete bzw. Destroy (Borrar registros)
+
+  
 En pocas palabras, CRUD resume las funciones requeridas por un usuario para crear y gestionar datos.
 - JWT
   - Definition: Es un estándar abierto basado en JSON propuesto por IETF (RFC 7519) para la creación de tokens de acceso que permiten la propagación de identidad y privilegios o claims en inglés.
