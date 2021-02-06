@@ -18,14 +18,14 @@ Los ViewSet son clases similares a las clases View, con la diferencia de que en 
 
 - JSON: JSON es un formato de texto sencillo para el intercambio de datos. Es usado a la hora de hacer peticiones por medio de las apis para devolver una respuesta, en este caso los datos solicitados.
 - Headers:
-  - Content-Type:
-  - Authorization:
-  - Cookie:
-  - Accept:
-  - Content-Length:
-  - Attachment:
-- Parsers
-- Renders
+  - Content-Type: Indica el tipo de medio del recurso.
+  - Authorization: Contiene las credenciales para autenticar a un usuario con un servidor.
+  - Cookie: Contiene HTTP cookies enviadas previamente por el servidor con la cabecera Set-Cookie.
+  - Accept: Informa al servidor sobre los diferentes tipos de datos que pueden enviarse de vuelta. Es de tipo MIME.
+  - Content-Length: Indica el tamaño del cuerpo del recurso, expresado en números decimales de octetos, que ha sido enviado al recipiente.
+  - Attachment: Indica que debe descargarse.
+- Parsers: Es un analizador de mensajes HTTP escritos en C. Analiza tanto las solicitudes como las respuestas. El analizador está diseñado para utilizarse en aplicaciones HTTP de rendimiento. No realiza ninguna llamada al sistema ni asignaciones, no almacena datos en el búfer, se puede interrumpir en cualquier momento. Dependiendo de su arquitectura, solo requiere alrededor de 40 bytes de datos por flujo de mensajes (en un servidor web que es por conexión). 
+- Renders: Es un anglicismo para representación gráfica, usado en la jerga informática para referirse al proceso de generar imagen fotorrealista, o no, a partir de un modelo 2D o 3D (o en lo que colectivamente podría llamarse un archivo de escena) por medio de programas informáticos.
 - Status codes
   - 200: OK. La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP:
   - 201: CREATED. La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado de ello. Ésta es típicamente la respuesta enviada después de una petición PUT.
@@ -38,13 +38,13 @@ Los ViewSet son clases similares a las clases View, con la diferencia de que en 
   - 500: INTERNAL SERVER ERROR. El servidor ha encontrado una situación que no sabe cómo manejarla.
     ...
 - HTTP Methods:
-  - GET
-  - POST
-  - PUT
-  - PATCH
-  - DELETE
-  - HEAD
-  - OPTIONS
+  - GET: El método GET solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.
+  - POST: El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.
+  - PUT: El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.
+  - PATCH: El método PATCH es utilizado para aplicar modificaciones parciales a un recurso.
+  - DELETE: El método DELETE borra un recurso en específico.
+  - HEAD: El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.
+  - OPTIONS: El método OPTIONS es utilizado para describir las opciones de comunicación para el recurso de destino.
 
 ## Otros conceptos
 
