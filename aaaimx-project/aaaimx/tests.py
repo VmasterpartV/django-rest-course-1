@@ -43,6 +43,10 @@ class AAAIMXTests(APITestCase):
         response = self.client.get('/api/auth/groups/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-        print(response.json())
+    def tests_users(self):
+        response = self.client.get('/api/users')
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+        #self.client.login(username)
 
     
